@@ -1,0 +1,75 @@
+main{
+    margin-top: 100px;
+}
+.plan{
+    border: white solid 1px;
+    margin: 50px 10%;
+    height: 80vh;
+}
+.plan>div>h2{
+    font-size: 30px;
+    text-align: start;
+    margin-left: 10px;
+}
+.cards{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    border: solid 5px white;
+    border-radius: 15px;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.price{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+}
+.characterists{
+    display: flex;
+    justify-content: space-around;
+}
+#k1{
+    border: 5px solid transparent;
+    border-radius: 15px;
+    -moz-border-image: -moz-linear-gradient(left, #fa6be7 0%, #3acfd5 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #fa6be7 0%, #3acfd5 100%);
+	border-image: linear-gradient(to right, #fa6be7 0%, #3acfd5 100%);
+    border-image-slice: 1;
+}
+
+#k2{
+    border: 5px solid transparent;
+    border-radius: 15px;
+    -moz-border-image: -moz-linear-gradient(left, #73e963 0%, #bb3ad5 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #73e963 0%, #bb3ad5 100%);
+	border-image: linear-gradient(to right, #73e963 0%, #bb3ad5 100%);
+    border-image-slice: 1;
+}
+
+@media (max-width: 800px) {
+    .plan{
+        height: auto;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card{
+        height: 80vh;
+        width: 50%;
+        margin: 50px;
+    }
+}
+@media (max-width: 640px){
+    .card{
+        width: 80%;
+    }
+}

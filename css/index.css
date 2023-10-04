@@ -1,0 +1,88 @@
+ul{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+/* banner */
+#banner{
+    background-image: url(../assets/fondo\ banner.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+#banner>div{
+    background-color: #231a378c;
+    backdrop-filter: blur(5px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*-----*/
+
+#inicio{
+    background-color: var(--yellow);
+}
+#prueba{
+    display: flex;
+    align-items: center;
+}
+#prueba>article{
+    margin: 0px;
+    margin-right: 10%;
+}
+#prueba>img{
+    height: 100vh;
+}
+
+/* horario */
+#horarios>p{
+    color: var(--yellow);
+}
+
+#horarios>article{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.horario>ul{
+    width: 100%;
+    flex-direction: column;
+}
+.horario>ul>li{
+    padding: 10px;
+    border: solid 2px white;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+}
+/* --- */
+
+@media (max-width: 1040px) {
+    #prueba{
+        flex-direction: column;
+    }
+    #prueba article{
+        margin: 0px 10%;
+    }
+    #prueba img{
+        margin: 0;
+        width: 100vw;
+        height: auto;
+    }
+}
+@media (max-width: 640px){
+    #horarios article{
+        margin: 0px;
+    }
+    .horario ul li{
+        font-size: 12px;
+    }
+}

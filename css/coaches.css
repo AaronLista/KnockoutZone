@@ -1,0 +1,126 @@
+.background{
+    background-image: url(../assets/ring\ fondo.png);
+    background-size: cover;
+}
+.banner{
+    position: relative;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(to right,rgb(68, 6, 126),70%, rgba(255, 255, 255, 0));
+    height: 100vh;
+}
+.content{
+    height: 70%;
+    display: flex;
+}
+.content>div{
+    width: 50%;
+}
+.lowtransition{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+    background-color: #231a37;
+    width: 100%;
+    height: 15%;
+    color: #231a37;
+}
+.hightransition{
+    clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+    background-color: #231a37;
+    width: 100%;
+    height: 15%;
+    color: #231a37;
+}
+.title{
+    background-image: url(../assets/fondotitlte.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.silhouette{
+    position: absolute;
+    height: 80%;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.silhouette>img{
+    height: 99%;
+    z-index: -1;
+}
+.separator{
+    color: black;
+    background-color: black;
+    height: 80vh;
+    width: 100%;
+}
+.left{
+    left: 0;
+    z-index: -1;
+    height: 90%;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.coaches{
+    justify-content: end;
+}
+.coach{
+    border-bottom: solid 2px #ffaa01;
+}
+.flag{
+    width: 50px;
+}
+.stats{
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+@media(max-width:800px){
+    .content div{
+        width: auto;
+    }
+    .title{
+        background-image: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%; 
+    }
+    .left{
+        justify-content: left;
+    }
+    .info{
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:640px){
+    .silhouette{
+        width: 100%;
+    }
+    .silhouette img{
+        width: 100%;
+    }
+    .info{
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    .logoinfo{
+        display: none;
+    }
+}
